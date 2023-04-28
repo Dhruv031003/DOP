@@ -8,8 +8,43 @@ body {
 #logo {
   height: 40px;
 }
+nav {
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+nav li {
+  margin: 0px 10px;
+  display: flex;
+}
+nav li a{
+  text-decoration: none;
+  color: white;
+}
+nav li a:hover, nav li a:active, nav li a:focus{
+  color: red; 
+}
+#right img{
+  height: 25px !important;
+  margin: 10px !important;
+  filter: grayscale(2);
+}
+#right img:hover{
+  filter: grayscale(0);
+}
 #landing-container {
-  width: 100vw !important ;
+  width: 98vw !important ;
   height: 90vh !important;
 }
 #landing-container::before {
@@ -21,25 +56,32 @@ body {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   opacity: 0.9;
   z-index: -1;
 }
-.landing-text{
+.landing-text {
   font-size: 80px !important;
   font-weight: 800 !important;
   word-spacing: 20px !important;
   transform: scaleY(1.3);
 }
 @keyframes blinking {
-  0%    { opacity: 0; }
-  50%   { opacity: 0; }
-  51%   { opacity: 1; }
-  100%  { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .landing-text:after {
-  content: '_';
+  content: "_";
   animation: blinking 0.7s infinite;
-  
 }

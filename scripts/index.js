@@ -1,3 +1,16 @@
+//NAVBAR HAMBURGER MENU 
+let NavAppear = () => {
+    let k = document.getElementById('middle').style;
+    if (k.display === "flex") {
+      k.display = "none";
+    }
+    else {
+      k.display = "flex";
+    }
+  }
+//**************
+
+//LANDING CONTAINER CHANGING TEXT
 var quotes = ['DESTINATION OF PEACE','FIND TRANQUILITY WITHIN','JOURNEY TO CALMNESS', 'EMBRACE THE STILLNESS'],
     currentStep = 0,
     textElement = document.querySelector('.landing-text'),
@@ -46,6 +59,6 @@ function addNextWord() {
   textElement.innerHTML = nextWord.substring(0, currentLength + 1); 
   setTimeout(addNextWord, 200);
   
-  
 }
+//***************
 
