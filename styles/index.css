@@ -27,7 +27,7 @@ body {
   z-index: -1;
 }
 .landing-text{
-  font-size: 60px !important;
+  font-size: 80px !important;
   font-weight: 800 !important;
   word-spacing: 20px !important;
   transform: scaleY(1.3);
