@@ -1,0 +1,39 @@
+#logo {
+    height: 40px;
+  }
+  nav {
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0px;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav ul {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  nav li {
+    margin: 0px 10px;
+    display: flex;
+  }
+  nav li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+  }
+  nav li a:hover, nav li a:active, nav li a:focus{
+    color: red; 
+  }
+  #right img{
+    height: 25px !important;
+    margin: 10px !important;
+    filter: invert(1);
+  }
+  #right img:hover{
+    filter: grayscale(0);
+  }
