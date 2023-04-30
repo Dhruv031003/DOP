@@ -14,20 +14,17 @@
 </head>
 
 <body>
-  <nav class="d-flex flex-row px-3 text-light align-items-center justify-content-between">
+  <nav class="d-flex flex-row px-3 text-light  justify-content-between">
     <div id="left">
-      <ul class="flex">
-        <li><a href="/RaiseRequest">Gallery</a></li>
-        <li><a href="/LiveRequest">Treks & Trips</a></li>
-        <li><a href="/">Franchise</a></li>
-        <li><a href="/">DOP Blog</a></li>
+      <ul class="flex p-5">
+        <li><a href="/RaiseRequest">GALLERY</a></li>
+        <li><a href="/LiveRequest">TREKS & TRIPS</a></li>
+        <li><a href="/">DOP FRANCHISE</a></li>
+        <li><a href="/">DOP BLOG</a></li>
       </ul>
     </div>
-    <div class="d-flex">
-      <a href="./index.html" class="py-3"><img src="./images/logo.png" id="logo" alt="logo"></a>
-    </div>
     <div class="flex" id="right">
-      <div class="container w-100 text-light text-center p-3 d-flex justify-content-between">
+      <div class="container w-100 text-light text-center p-3 flex">
         <a href="https://www.facebook.com/profile.php?id=100090188624120" target="_blank"><img src="./images/email.png"
             alt="aarohanrjit"></a>
         <a href="https://www.facebook.com/profile.php?id=100090188624120" target="_blank"><img
@@ -42,14 +39,47 @@
     </div>
   </nav>
   <main>
-    <div id="landing-container" class="d-flex justify-content-center align-items-center flex-column">
-      <h1 class="landing-text pb-5 text-light">DESTINATION OF PEACE</h1>
-      <video id="background-video" autoplay loop muted poster="./images/bg-video-thumbnail.jpg">
-        <source src="./images/bg-video.mp4" type="video/mp4">
-      </video>
+    <div id="landing-container" class="scroll-snap d-flex justify-content-center align-items-center flex-column">
+      <h1 class="landing-text">DESTINATION OF PEACE</h1>
+      <img src="./images/landing-image-1.jpg" alt="" class="landing-image" id="landing-image-1">
+      <img src="./images/landing-image-2.jpg" alt="" class="landing-image" id="landing-image-2">
+      <img src="./images/landing-image-3.jpg" alt="" class="landing-image" id="landing-image-3">
+      <img src="./images/landing-image-4.jpg" alt="" class="landing-image" id="landing-image-4">
     </div>
-    <div id="contact" class="d-flex justify-content-center align-items-center text-light flex-row bg-black">
-      <h1>Find Your Piece of Peace @</h1>
+    <div id="contact" class="scroll-snap d-flex justify-content-center align-items-center flex-row min-vh-100">
+      <form class="text-center m-5" id="contact-form" action="https://formsubmit.co/dhruvdorbi03@gmail.com" method="POST">
+        <div class="mb-1">
+          <label for="exampleInputName" class="form-label">Name</label>
+          <input type="text" name="name" class="form-control" id="exampleInputName">
+        </div>
+        <div class="mb-1">
+          <label for="exampleInputEmail" class="form-label">Email address</label>
+          <input type="email" class="form-control" name="email" id="exampleInputEmail" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-1">
+          <label for="exampleInputDestination" class="form-label">Destination</label>
+          <select class="form-select" name="destination" aria-label="Default select example"
+            id="exampleInputDestination">
+            <option selected>DOP Kasol</option>
+            <option value="destination">DOP Tosh</option>
+          </select>
+        </div>
+        <div class="mb-1">
+          <label for="exampleInputPhoneNo" class="form-label">Phone No</label>
+          <input type="tel" name="name" class="form-control" id="exampleInputPhoneNo">
+        </div>
+        <div class="mb-1 row">
+          <div class="col-6">
+            <label for="exampleInputPassword1" class="form-label">Check-In Date</label>
+            <input type="date" name="check-in" class="form-control" id="exampleInputCheckIn">
+          </div>
+          <div class="col-6">
+            <label for="exampleInputPassword1" class="form-label">Check-Out</label>
+            <input type="date" name="check-out" class="form-control" id="exampleInputCheckOut">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-outline-dark">Submit</button>
+      </form>
     </div>
   </main>
   <script src="./scripts/index.js"></script>
