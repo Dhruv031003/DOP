@@ -13,7 +13,7 @@ let NavAppear = () => {
 //LANDING CONTAINER CHANGING TEXT
 var quotes = ['DESTINATION OF PEACE','FIND TRANQUILITY WITHIN','JOURNEY TO CALMNESS', 'EMBRACE THE STILLNESS'],
     currentStep = 0,
-    textElement = document.querySelector('.landing-text'),
+    textElement = document.querySelector('.changing-text'),
     oldWord = '';
 
 setTimeout(changeWord, 500);
