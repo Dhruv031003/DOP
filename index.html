@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="./styles/index.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
@@ -43,70 +45,122 @@
     <div id="landing-container" class="scroll-snap d-flex justify-content-center align-items-center flex-column">
       <h3 class="text-light word-spacing">CAFES, TRIPS & TREKS and HOMESTAYS</h3>
       <h1 class="landing-text"><b>DESTINATION OF PEACE</b></h1>
-      <h2 class="changing-text"></h2>
+      <h2 class="changing-text">FIND TRANQUILITY WITHIN</h2>
     </div>
-    <div id="about-us" class="scroll-snap w-75 mx-auto d-flex align-items-center justify-content-center p-5 flex-column">
-      <div class="m-2">
-        <h1 class="text-center"><b>ABOUT US</b></h1>
-        <p class="text-center" id="about-para">Sitting at a prime location at the foothills of the Himalayas, Destination Of Peace lies in the
-          Parvati Valley of Himachal Pradesh. Surrounded with thick pine forests and fruit fields, DOP
-          welcomes you with open arms- an invitation to an experience like never before. River Parvati
-          flows just beside the property and the sound of its flowing water is enchanting. This is the
-          perfect place to lose your mind, and maybe find it again!
-          Check-in to a different plane of existence and find your freedom at Destination of Peace.</p>
-      </div>
-      <div class="d-flex align-items-center justify-content-center">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-              <img src="./images/cafe.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="mx-auto">CAFES</h5>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="./images/trips&treks.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="mx-auto">TRIPS & TREKS</h5>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="./images/homestays.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="mx-auto">HOMESTAYS</h5>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+    <div class="m-5 scroll-snap p-3 d-flex justify-content-center align-items-center" id="about-us">
+      <div class="row" id="about-us-inner">
+        <div class="col m-3 d-flex align-items-center justify-content-center">
+          <img src="./images/cafe.jpg" alt="">
+        </div>
+        <div class="col m-3 d-flex justify-content-center flex-column">
+          <h1 class="px-1 pt-1 m-0 headings">ABOUT US</h1>
+          <p class="ms-2 me-5 headings">Sitting at a prime location at the foothills of the Himalayas,
+            Destination Of Peace lies in the
+            Parvati Valley of Himachal Pradesh. Surrounded with thick pine forests and fruit fields, DOP
+            welcomes you with open arms- an invitation to an experience like never before. River Parvati
+            flows just beside the property and the sound of its flowing water is enchanting. This is the
+            perfect place to lose your mind, and maybe find it again! <br>
+            Check-in to a different plane of existence and find your freedom at Destination of Peace!!!</p>
         </div>
       </div>
     </div>
-    <div id="gallery" class="scroll-snap m-5 w-75 mx-auto">
-      <h1 class="text-center"><b>TAKE A PEEK INTO DOP UNIVERSE</b></h1>
-      <div class="row" id="gallery-inner">
-        <div class="col">
-          <img src="./images/IMG20220505190644.jpg" alt="" class="row">
-          <img src="./images/IMG20220506174139.jpg" alt="" class="row">
+    <div id="what_we_do" class="m-5 pt-5 d-flex align-items-center justify-content-center flex-column">
+      <h1 class="headings">What we do?</h1>
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="d-flex align-items-center justify-content-center flex-nowrap flex-column m-5 what_we_do_box">
+          <img src="./images/food.png" alt="" class="m-4">
+          <h5 class="headings">CAFES</h5>
+          <p class="text-center headings">Fresh coffee, delicious food, warm ambiance. <br>Welcome to our cafe.</p>
+        </div>
+        <div class="d-flex align-items-center justify-content-center flex-nowrap flex-column m-5 what_we_do_box">
+          <img src="./images/bed.png" alt="" class="m-4">
+          <h5 class="headings">HOMESTAYS</h5>
+          <p class="text-center headings">
+            Cozy rooms, homemade meals, and local charm.<br>Feel at home at our homestay.</p>
+        </div>
+        <div class="d-flex align-items-center justify-content-center flex-nowrap flex-column m-5 what_we_do_box">
+          <img src="./images/trips.png" alt="" class="m-4">
+          <h5 class="headings">TRIPS & TREKS</h5>
+          <p class="text-center headings">Explore the great outdoors and create unforgettable memories. <br>Adventure awaits you.</p>
         </div>
       </div>
     </div>
+    <div id="images" class="scroll-snap my-5 p-3">
+      <h1 class="text-center headings py-3"><b>A PEEK INTO DOP UNIVERSE</b></h1>
+      <div class="grid-container">
+        <div>
+          <img class='grid-item grid-item-1' src='./images/balcony.jpg' alt=''>
+          <p>"A moment of friendship."</p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-2' src='./images/cloud_on_mountain.jpg' alt=''>
+          <p>"Over the clouds."</p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-3' src='./images/cool_pic.jpg' alt=''>
+          <p>"Gathering under the stary sky."</p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-4' src="./images/trekking.jpg" alt=''>
+          <p>"Step by Step"</p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-5' src="./images/trees.jpg" alt=''>
+          <p>"Nature's Umbrella"</p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-6' src="./images/dining_area.jpg" alt=''>
+          <p>"A feast for senses"</p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-7' src="./images/lake.jpg" alt=''>
+          <p>"The magic of Sun and Water"</p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-8' src="./images/inside_potrait.jpg" alt=''>
+          <p>"A Slice of Heaven"</p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-9' src="./images/only_cool_pic.jpg" alt=''>
+          <p>"Relaxing!!!</p>
+        </div>
+        <div>
+          <img class='grid-item grid-item-10' src="./images/yoga.jpg" alt=''>
+          <p>"A new POV!"</p>
+        </div>
+      </div>
+    </div>
+    <h1 class="headings text-center">TRIPS AND TREKS</h1>
+    <div class="page-content">
+      <div class="trip-card">
+        <div class="content">
+          <h2 class="title">Hippie In Hills</h2>
+          <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+          <button class="btn text-warning">View Trips</button>
+        </div>
+      </div>
+      <div class="trip-card">
+        <div class="content">
+          <h2 class="title">Manali Weekend</h2>
+          <p class="copy">Plan your next trip with these fabulous destinations</p>
+          <button class="btn text-warning">View Trips</button>
+        </div>
+      </div>
+      <div class="trip-card">
+        <div class="content">
+          <h2 class="title">High in Himalayas</h2>
+          <p class="copy">It's what you've always dreamed of!!!</p>
+          <button class="btn text-warning">View Trips</button>
+        </div>
+      </div>
+      <div class="trip-card">
+        <div class="content">
+          <h2 class="title">Alpine Adventure</h2>
+          <p class="copy">Seriously, straight up, just blast off into outer space today.</p>
+          <button class="btn text-warning">View Trips</button>
+        </div>
+      </div>
+  </div>
     <div id="contact" class="scroll-snap d-flex justify-content-end align-items-center flex-row min-vh-100">
       <form class="text-center m-5" id="contact-form" action="https://formsubmit.co/dhruvdorbi03@gmail.com"
         method="POST">
@@ -147,6 +201,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
+
 </body>
+
 
 </html>
