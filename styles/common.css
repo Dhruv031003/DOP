@@ -2,12 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
 
-nav {
-  flex-wrap: wrap;
-  position: fixed;
-  width: 100vw !important;
+nav{
+  position: fixed !important;
   top: 0px;
-  z-index: 100;
+  width: 100%;
+  z-index: 9999;
   backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.205);
 }
@@ -30,15 +29,38 @@ nav li a:active,
 nav li a:focus {
   color: rgb(255, 125, 19);
 }
-#right img {
+.middle img {
   height: 20px !important;
   margin: 10px !important;
   filter: grayscale(1);
 }
-#right img:hover {
+.middle img:hover {
   filter: grayscale(0);
 }
 #logo {
   height: 35px;
+  margin: 10px;
   filter: none;
+}
+#hamburger{
+  height: 35px;
+}
+@media screen and (max-width: 1000px){
+  nav div{
+    margin: 0px !important;
+  }
+}
+@media screen and (max-width: 500px){
+  nav{
+    padding: 0px !important;
+  }
+  nav div,nav button{
+    margin: 5px !important;
+  }
+  .middle ul,.middle div{
+    flex-direction: column !important;
+  }
+  nav{
+    align-items: start !important;
+  }
 }
