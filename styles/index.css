@@ -411,6 +411,9 @@ input:focus,select:focus{
   #about-us img{
     height: 400px;
   }
+  #about-us p{
+    margin: 0px !important;
+  }
 }
 @media screen and (max-width:720px){
   #landing-container h3{
@@ -462,5 +465,5 @@ input:focus,select:focus{
    }
    #contact-us{
     padding: 10px !important;
-   }
+   }  
 }
