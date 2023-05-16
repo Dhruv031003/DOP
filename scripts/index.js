@@ -1,14 +1,4 @@
-//NAVBAR HAMBURGER MENU 
-let NavAppear = () => {
-  let k = document.getElementById('middle').style;
-  if (k.display === "flex") {
-    k.display = "none";
-  }
-  else {
-    k.display = "flex";
-  }
-}
-//**************
+
 
 //LANDING CONTAINER CHANGING TEXT
 var quotes = ['FIND TRANQUILITY WITHIN', 'JOURNEY TO CALMNESS', 'EMBRACE THE STILLNESS'],
