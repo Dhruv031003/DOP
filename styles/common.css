@@ -146,4 +146,7 @@ footer li a:focus {
   nav {
     align-items: start !important;
   }
+  #footer ul li{
+    text-align: center !important;
+  }
 }
