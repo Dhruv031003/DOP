@@ -91,11 +91,14 @@ footer li a:focus {
   filter: contrast(2);
   scale: 1.1;
 }
-#hamburger {
+#hamburger img{
   height: 35px;
 }
+#hamburger{
+  border: none !important;
+}
 #hamburger:focus{
-  box-shadow: none !important;
+  box-shadow: inset 0px 0px 5px black !important;
   border: none !important;
 }
 #social_cont img {
@@ -137,8 +140,7 @@ footer li a:focus {
   nav button {
     margin: 5px !important;
   }
-  .middle ul,
-  .middle div,footer ul {
+  .middle ul,footer ul {
     flex-direction: column !important;
   }
   nav {
