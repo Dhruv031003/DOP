@@ -414,6 +414,15 @@ input:focus,select:focus{
   #about-us p{
     margin: 0px !important;
   }
+  #about-us h1{
+    text-align: center !important;
+  }
+  #reviews{
+    padding: 10px !important;
+  }
+  #reviews section{
+    padding: 0px !important;
+  }
 }
 @media screen and (max-width:720px){
   #landing-container h3{
