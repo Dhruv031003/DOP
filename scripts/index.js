@@ -1,4 +1,5 @@
-
+const navigationHeight=document.querySelector('.navbar').offsetHeight;
+document.documentElement.style.setProperty('--scroll-padding', navigationHeight+ 5 + "px");
 
 //LANDING CONTAINER CHANGING TEXT
 var quotes = ['FIND TRANQUILITY WITHIN', 'JOURNEY TO CALMNESS', 'EMBRACE THE STILLNESS'],

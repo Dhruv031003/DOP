@@ -131,6 +131,9 @@ footer li a:focus {
   nav div {
     margin: 0px !important;
   }
+  nav{
+    background-color: rgba(255, 255, 255, 0.452);
+  }
 }
 @media screen and (max-width: 500px) {
   nav {

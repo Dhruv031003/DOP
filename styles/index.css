@@ -10,12 +10,11 @@ body {
   width: 100%;
   margin: 0px !important;
   padding: 0px !important;
-  scroll-snap-type: y mandatory;
   font-family: sans-serif !important;
+  scroll-behavior: smooth;
+  scroll-padding-top:var(--scroll-padding,100px);
 }
-/* .scroll-snap {
-  scroll-snap-align: start;
-} */
+
 #landing-container {
   position: relative;
   width: 100% !important ;
